@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawgorithms AI Test Page</title>
+
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-color: #f8f9fa; /* Light grey background */
+            color: #333; /* Darker text color */
+            line-height: 1.6;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            /* Ensure content doesn't go under the fixed chat */
+            padding-right: 370px; /* Add padding slightly wider than the chat widget */
+        }
+
+        .content-wrapper {
+            padding: 40px; /* Add padding around the text content */
+            max-width: 800px; /* Optional: Limit content width */
+            margin-left: auto; /* Center the wrapper if max-width is set */
+            margin-right: auto; /* Center the wrapper if max-width is set */
+        }
+
+        h1 {
+            color: #1a73e8; /* A blue color for the heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #555; /* Slightly lighter text for paragraph */
+            font-size: 1.1em;
+        }
+    </style>
+
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: Google Sans; /* Keep Google Sans for the widget */
+            --df-messenger-chat-background: #f3f6fc;
+            --df-messenger-message-user-background: #d3e3fd;
+            --df-messenger-message-bot-background: #fff;
+            bottom: 0;
+            right: 0;
+            top: 0; /* Makes it full height */
+            width: 350px; /* Sets a fixed width */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h1>Lawgorithms AI test page</h1>
+        <p>The chat panel should appear on the right side of this page.</p>
+        <p>Testing in progress...</p>
+    </div>
+
+    <df-messenger
+      project-id="lawgorithms-a"
+      agent-id="778e69d5-5630-4931-94bf-8d23d6cd1351"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat
+        chat-title="lawgorithms_ai"> </df-messenger-chat>
+    </df-messenger>
+
+</body>
+</html>
